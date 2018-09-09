@@ -2,5 +2,5 @@
 //vars/sayHello.groovy
 
 def call(String name = "Tito"){
-  println "Hello ${name}!";
+  echo "Hello ${name}!";
 }
