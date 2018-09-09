@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 //vars/sayHello.groovy
 
-def call(){
-  println "Hello Tito!";
+def call(String name = "Tito"){
+  println "Hello ${name}!";
 }
