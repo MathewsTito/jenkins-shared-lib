@@ -2,5 +2,5 @@
 //vars/SayHello.groovy
 
 def call() {
-  echo "Hello Tito!";
+  println "Hello Tito Mathews!";
 }
