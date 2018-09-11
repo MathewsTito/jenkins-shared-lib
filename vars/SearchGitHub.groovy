@@ -2,7 +2,7 @@
 //vars/SearchGitHub.groovy
 
 def call(String s) {
-  String url = "https://api.github.com/search/code?q=${s} in:file&access_token=2580e2cd4bc9f7c13b598315ea561b2b8b8b0b61";
+  String url = "https://api.github.com/search/code?q=${s} in:file&access_token=b44984164255e21780ababda4888acad0f97eb4d";
   def connection = new URL(url).openConnection() as HttpURLConnection;
   // set some headers
   connection.setRequestProperty( 'User-Agent', 'groovy-2.4.4' )
