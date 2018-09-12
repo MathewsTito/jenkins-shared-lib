@@ -1,7 +1,8 @@
 #!/usr/bin/env groovy
 //vars/ExtractRepoNamesFromSearch.groovy
 
-def call(String s) {
+def call() {
+  println message;
   def sluper = new JsonSlurper();
   def result = sluper.parseText(message);
   def items = result.items;
