@@ -8,5 +8,7 @@ def call(String s) {
   connection.setRequestProperty( 'User-Agent', 'groovy-2.4.4' )
   connection.setRequestProperty( 'Accept', 'application/json' )
   // get the response code - automatically sends the request
-  println connection.responseCode + ": " + connection.inputStream.text
+  //println connection.responseCode + ": " + connection.inputStream.text
+
+  message = connection.inputStream.text;
 }
