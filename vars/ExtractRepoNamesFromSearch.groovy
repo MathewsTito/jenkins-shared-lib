@@ -3,7 +3,7 @@
 
 def call() {
   println message;
-  def sluper = new JsonSlurper();
+  def sluper = new groovy.json.JsonSlurper();
   def result = sluper.parseText(message);
   def items = result.items;
   def items2 = items.unique {s1,s2 -> s1.repository.full_name <=> s2.repository.full_name};
